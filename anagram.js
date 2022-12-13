@@ -1,19 +1,15 @@
 
 const anagram = (str1, str2) => {
     // Your code here  
-// Comparez la longueur des deux chaînes.
-// Si la longueur des deux chaînes n'est pas la même, cela signifie qu'elles ne peuvent pas être des anagrammes l'une de l'autre. Renvoyez donc false.
-
+// On compare les longueurs des deux chaines de caractères dans une fonction. Si les longueurs sont identiques, on continue.
 anagram2(str1,str2);
 
-// Si la longueur des deux chaînes est la même, continuez.
-
-// Trie les deux chaînes.
+// On découpe les chaines en array puis on les classes par ordre alphabétique
 const string1=str1.split("");
 const array1=string1.sort();
 const string2=str2.split("");
 const array2=string2.sort();
-// Comparez les deux chaînes triées.
+// On remets les array en string et on compare si elles sont pareils
 const string11 = array1.toString()
 const string21 = array2.toString()
 if (string11 === string21){
